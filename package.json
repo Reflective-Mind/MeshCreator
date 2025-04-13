@@ -1,20 +1,26 @@
-   {
-     "name": "mesh-creator",
-     "version": "1.0.0",
-     "private": true,
-     "scripts": {
-       "dev": "next dev",
-       "build": "next build",
-       "start": "next start"
-     },
-     "dependencies": {
-       "next": "^14.0.0",
-       "react": "^18.2.0",
-       "react-dom": "^18.2.0",
-       "three": "^0.128.0"
-     },
-     "devDependencies": {
-       "eslint": "^8.56.0",
-       "eslint-config-next": "^14.0.0"
-     }
-   }
+{
+  "name": "mesh-creator",
+  "version": "1.0.0",
+  "description": "Unreal Engine Mesh Generator Tool",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.128.0",
+    "file-saver": "^2.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "KenGuru-Coding",
+  "license": "MIT"
+}
