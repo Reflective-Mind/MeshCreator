@@ -1,0 +1,149 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #252526;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.viewport {
+  flex: 1;
+  position: relative;
+  background-color: #1e1e1e;
+}
+
+.viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #cccccc;
+  text-align: center;
+}
+
+.codeEditorContainer {
+  margin-top: 1rem;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #2d2d2d;
+  color: #cccccc;
+  border: 1px solid #3c3c3c;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #3c3c3c;
+}
+
+.button:active {
+  background-color: #505050;
+}
+
+.primaryBtn {
+  background-color: #0e639c;
+  border: 1px solid #1177bb;
+}
+
+.primaryBtn:hover {
+  background-color: #1177bb;
+}
+
+.exportBtn {
+  background-color: #3c873a;
+  border: 1px solid #4a9c47;
+}
+
+.exportBtn:hover {
+  background-color: #4a9c47;
+}
+
+.exampleButtons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.statusContainer {
+  padding: 0.5rem;
+  background-color: #252526;
+  border-top: 1px solid #3c3c3c;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 0.3rem;
+  word-wrap: break-word;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.statusLog {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+.error {
+  color: #f14c4c;
+}
+
+.success {
+  color: #6acb6a;
+}
+
+.panelLabel {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+}
